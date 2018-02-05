@@ -1,0 +1,10 @@
+{
+	"id" : "empty-doc-id",
+	"info":{
+		"name": "empty-doc-name",
+		"trilogue-table-id":"trilogue-table-id",
+		"institution":"ep",
+		"version":"0",
+		"version-type":"Major"
+	}
+}

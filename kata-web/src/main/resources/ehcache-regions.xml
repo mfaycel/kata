@@ -1,0 +1,49 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ehcache.xsd">
+
+	<!--
+	Mandatory Default Cache configuration. These settings will be applied to caches
+	created programmatically using CacheManager.add(String cacheName)
+	-->
+	<defaultCache
+			maxElementsInMemory="10000"
+			eternal="false"
+			timeToIdleSeconds="120"
+			timeToLiveSeconds="120"
+			overflowToDisk="false"
+			memoryStoreEvictionPolicy="LRU">
+	</defaultCache>
+
+	<!--
+	Cache region for eternal object. They won't be removed from memory
+	-->
+	<cache name="commonEternal"
+			maxElementsInMemory="100000"
+			eternal="true"
+			diskPersistent="false">
+	</cache>
+
+	<!--
+	Cache region for queries
+	-->
+	<cache name="org.hibernate.cache.internal.StandardQueryCache"
+		maxElementsInMemory="10000"
+		eternal="false"
+		timeToIdleSeconds="120"
+		timeToLiveSeconds="120"
+		overflowToDisk="false"
+		memoryStoreEvictionPolicy="LRU"
+	/>
+
+	<!--
+	Cache region for last tables update timestamp (used to manage query cache)
+	-->
+	<cache name="org.hibernate.cache.spi.UpdateTimestampsCache"
+		maxElementsInMemory="10000"
+		eternal="false"
+		timeToIdleSeconds="120"
+		timeToLiveSeconds="120"
+		overflowToDisk="false"
+		memoryStoreEvictionPolicy="LRU"
+	/>
+
+</ehcache>

@@ -1,0 +1,113 @@
+{
+	"id" : "empty-doc-id",
+
+	"info":{
+		"name": "empty-doc-name",
+		"trilogue-table-id":"doc-settings",
+		"institution":"ep",
+		"version":"0",
+		"version-type":"Major"
+	},
+
+	"settings" : {
+		"ec-order" : "0",
+		"ep-order" : "1",
+		"ceu-order" : "2",
+		"agr-order" : "3",
+		"drf-order" : "4",
+		"aux-order" : "5",
+
+		"ec-visible" : "true",
+		"ep-visible" : "true",
+		"ceu-visible" : "true",
+		"agr-visible" : "true",
+		"drf-visible" : "false",
+		"aux-visible" : "false",
+
+		"ec-columns-titles" : "EC Proposal",
+		"ep-columns-titles" : "EP Mandate",
+		"ceu-columns-titles" : "CEU Position",
+		"agr-columns-titles" : "Draft Agreement",
+		"drf-columns-titles" : "Internal Draft",
+		"aux-columns-titles" : "Auxiliary",
+
+		"ec-comparison" : "",
+		"ep-comparison" : "ec",
+		"ceu-comparison" : "ec",
+		"agr-comparison" : "ec",
+		"drf-comparison" : "ec",
+		"aux-comparison" : "ec",
+
+		"ec-comparison-styles" : "style-0",
+		"ep-comparison-styles" : "style-2",
+		"ceu-comparison-styles" : "style-1",
+		"agr-comparison-styles" : "style-3",
+		"drf-comparison-styles" : "style-3",
+		"aux-comparison-styles" : "style-0",
+
+		"optimise-for-black-white-print" : "true",
+		"allow-comments-in-export" : "true",
+
+		"which-rows-to-show" : "changed-only-rows",
+		"rows-per-page" : "25"
+	},
+
+	"content":[{
+		"index":"(1)",
+		"id":"1",
+		"color-marker": "red",
+		
+
+		"ec":{
+			"id":"1.1",
+			"deleted":false,
+			"text":"A number of amendments are to be made to Directive 2002/92/EC of the European Parliament and the Council of 9 December 2002 on insurance mediation. In the interests of clarity, that Directive should be recast.",
+			"last-update": "2017-03-16T10:31:35+01:00",
+			"version":1,
+"labels":[{
+			"id":"id",
+			"name":"My New Label",
+			"color":"#CC0000"
+		},{
+			"id":"id2",
+			"name":"Second Label",
+			"color":"#CC0000"
+		}],
+			"footnotes":[{
+				"text":"TEXT OF THE FOOT NOTE",
+				"position":10,
+				"index":"1b"
+			},{
+				"text":"TEXT OF THE FOOT NOTE",
+				"position":23,
+				"index":"2c"
+			}],
+			"location-path":[{
+				"index":0,
+				"text":"Article 1"
+			},{
+				"index":3,
+				"text":"Paragraph 4"
+			}],
+			"diff":{
+				"text":"Hello <del>dear </del>friend, do you want to go out for a<ins> cold</ins> beer?",
+				"footnotes":[{
+					"text":"Hello <del>dear </del>friend, do you want to go out for a<ins> cold</ins> beer?",
+					"position":12,
+					"previousPosition":10,
+					"index":"2b",
+					"type":"deletion"
+				},{
+					"text":"Hello <del>dear </del>friend, do you want to go out for a<ins> cold</ins> beer?",
+					"position":12,
+					"previousPosition":10,
+					"index":"2b",
+					"type":"deletion"					
+				}]
+			}
+
+
+		}
+
+	}]			   
+}

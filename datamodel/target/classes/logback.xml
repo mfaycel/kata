@@ -1,0 +1,25 @@
+<configuration debug="true">
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+      <encoder name="enc" class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+
+      </encoder>
+  </appender>
+
+    <!--<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">-->
+        <!--<encoder>-->
+            <!--<pattern>%d [%thread] %-5level %logger{50} - %msg%n</pattern>-->
+        <!--</encoder>-->
+    <!--</appender>-->
+
+    <logger name="org" level="INFO"/>
+    <logger name="fr.societe" level="DEBUG"/>
+    <logger name="org.springframework.security" level="INFO"/>
+    <logger name="org.springframework.orm" level="INFO"/>
+    <logger name="org.hibernate" level="INFO"/>
+
+
+  <root level="INFO">
+    <appender-ref ref="STDOUT" />
+  </root>
+</configuration>

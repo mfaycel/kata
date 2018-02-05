@@ -1,0 +1,59 @@
+{
+	"id" : "empty-doc-id",
+	"info":{
+		"name": "empty-doc-name",
+		"trilogue-table-id":"doc-empty-row",
+		"institution":"ep",
+		"version":"0",
+		"version-type":"Major"
+	},
+	
+	"settings" : {
+		"ec-order" : "0",
+		"ep-order" : "1",
+		"ceu-order" : "2",
+		"agr-order" : "3",
+		"drf-order" : "4",
+		"aux-order" : "5",
+
+		"ec-visible" : "true",
+		"ep-visible" : "true",
+		"ceu-visible" : "true",
+		"agr-visible" : "true",
+		"drf-visible" : "false",
+		"aux-visible" : "false",
+
+		"ec-columns-titles" : "EC Proposal",
+		"ep-columns-titles" : "EP Mandate",
+		"ceu-columns-titles" : "CEU Position",
+		"agr-columns-titles" : "Draft Agreement",
+		"drf-columns-titles" : "Internal Draft",
+		"aux-columns-titles" : "Auxiliary",
+
+		"ec-comparison" : "",
+		"ep-comparison" : "ec",
+		"ceu-comparison" : "ec",
+		"agr-comparison" : "ec",
+		"drf-comparison" : "ec",
+		"aux-comparison" : "ec",
+
+		"ec-comparison-styles" : "style-0",
+		"ep-comparison-styles" : "style-2",
+		"ceu-comparison-styles" : "style-1",
+		"agr-comparison-styles" : "style-3",
+		"drf-comparison-styles" : "style-3",
+		"aux-comparison-styles" : "style-0",
+
+		"optimise-for-black-white-print" : "true",
+		"allow-comments-in-export" : "true",
+
+		"which-rows-to-show" : "changed-only-rows",
+		"rows-per-page" : "25"
+	},
+
+	"content":[{
+		"index":"(1)",
+		"id":"1",
+		"color-marker": "red"
+	}]			   
+}

@@ -1,0 +1,19 @@
+<configuration>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+      <encoder name="enc" class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+          <layout class="fr.societe.generale.service.logger.PatternLayoutWithUserContext">
+              <param name="Pattern" value="%d [%user] %-5level %logger{36} - %msg%n" />
+          </layout>
+      </encoder>
+  </appender>
+
+    <logger name="org" level="ERROR"/>
+    <logger name="ep.triloedi" level="INFO"/>
+    <logger name="org.springframework.security" level="INFO"/>
+
+
+  <root level="INFO">
+    <appender-ref ref="STDOUT" />
+  </root>
+</configuration>
